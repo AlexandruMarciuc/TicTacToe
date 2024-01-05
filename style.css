@@ -1,0 +1,204 @@
+#panel {
+  position: absolute;
+  width: 550px;
+  height: 210px;
+  border: 1px rgb(255, 255, 255);
+  margin-top: 500px;
+  border-radius: 55px;
+  background-color: rgba(86, 231, 233, 0.879);
+  box-shadow: 0 0 300px rgba(253, 253, 253, 0.5);
+}
+
+#switchPanel {
+  position: absolute;
+  width: 400px;
+  height: 150px;
+  border: 1px rgb(255, 255, 255);
+  margin-top: 500px;
+  border-radius: 55px;
+  background-color: rgba(86, 231, 233, 0.879);
+  box-shadow: 0 0 300px rgba(253, 253, 253, 0.5);
+  display: none;
+}
+#changeToO {
+  position: absolute;
+  margin-left: 35px;
+  margin-top: 110px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border-radius: 35px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#stayWithX {
+  position: absolute;
+  margin-left: 180px;
+  margin-top: 110px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border-radius: 35px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#text {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+#text1 {
+  position: relative;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+  margin-left: 90px;
+  font-size: 20px;
+}
+
+#text2 {
+  position: relative;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  margin-top: 25px;
+  margin-left: 180px;
+  font-size: 20px;
+}
+
+#oButton {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  margin-left: 200px;
+  margin-top: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border-radius: 35px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#xButton {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  margin-left: 50px;
+  margin-top: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border-radius: 35px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.app {
+  position: relative; /* Add relative positioning to the container */
+  width: 605px;
+  height: 605px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: none;
+}
+
+.squares {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 0;
+}
+
+.square {
+  position: relative; /* Add relative positioning to each square */
+  background-color: rgb(59, 206, 208);
+  border: 1px solid gray;
+  width: 32%;
+  height: 32%;
+  text-align: center;
+  border: solid 0.2px rgb(255, 255, 255);
+  margin-left: 5px;
+  margin-bottom: 1px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+}
+
+#oButton:hover,
+#xButton:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+#zero:hover,
+#one:hover,
+#two:hover,
+#three:hover,
+#four:hover,
+#five:hover,
+#six:hover,
+#seven:hover,
+#eight:hover {
+  border: 1px solid rgb(28, 28, 28);
+}
+
+#x,
+#o {
+  position: absolute; /* Position absolute for visual elements */
+  top: 45%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  color: aliceblue;
+}
+
+#x {
+  font-size: 120px;
+}
+
+#o {
+  font-size: 130px;
+}
+
+body {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  background-color: rgb(55, 55, 55);
+}
+
+#score {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: none;
+}
+
+#humanScore {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  font-size: 1.8rem;
+  right: 48px;
+  top: 50px;
+  color: aliceblue;
+}
+#aiScore {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  font-size: 1.8rem;
+  right: 1292px;
+  top: 50px;
+  color: aliceblue;
+}
+
+#humanScore,
+#aiScore {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+#humanScore > div,
+#aiScore > div {
+  margin-left: 10px; /* Adjust the margin as needed
+   */
+  font-size: 1.8rem;
+}
